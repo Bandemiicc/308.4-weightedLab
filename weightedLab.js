@@ -81,15 +81,13 @@ sortedArray.splice(4,0,lastIndex)
 
 console.log(sortedArray) // 3. uncomment for answer
 
-let totalAge = 0; // Variable to store the cumulative sum of ages
+let totalAge = 0; 
 
-// Iterate over the array of objects
 for (let i = 0; i < sortedArray.length; i++) {
-    // Convert the age from string to number and add to totalAge
     totalAge += Number(sortedArray[i].age);
 }
 
-// Calculate the average age
+
 let averageAge = totalAge / sortedArray.length;
 
 console.log(`Average Age: ${averageAge}`);
